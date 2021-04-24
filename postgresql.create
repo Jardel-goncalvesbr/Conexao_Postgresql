@@ -1,0 +1,9 @@
+try {
+  PreparedStatement pst = conexao.conexao.prepareStatement("insert into tb_pessoa (nome, sobrenome) values (?,?)");
+  pst.setString(1, "Fulano");
+  pst.setString(2, "de Tal");
+  pst.executeUpdate();
+  JOptionPane.showMessageDialog(null, "Salvo com Sucesso!");
+} catch (SQLException ex) {
+  JOptionPane.showMessageDialog(null, "Erro na inserção!\nErro: " + ex.getMessage());
+}

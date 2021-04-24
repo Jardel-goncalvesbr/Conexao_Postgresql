@@ -1,0 +1,11 @@
+package supreme_mkt_digital;
+
+
+public class ConexaoPostGrees {
+
+    public static void main(String[] args) {
+        Connect conexao = new Connect();
+        conexao.conectar();
+    }
+    
+}
